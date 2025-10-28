@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Godot of Babel"
-run/main_scene="res://main_scene.tscn"
+run/main_scene="res://Scenes/main_scene.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Assets/icon.svg"
 
 [physics]
 
