@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0xpijqo13a21"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o3jxj"]
+albedo_color = Color(0.27948022, 0.9999997, 0.91955066, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_o3jxj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0f027"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0f027"]
+
+[node name="Main Scene" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.4086194, 0, 0, 0, 0.13897073, 0, 0, 0, 3.6433635, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_o3jxj")
+mesh = SubResource("BoxMesh_o3jxj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.45315388, 0, 0.21130913, 0, 0.5, 0, -0.21130913, 0, 0.45315388, 0, 0.3, -0.7)
+material_override = SubResource("StandardMaterial3D_0f027")
+mesh = SubResource("BoxMesh_0f027")
